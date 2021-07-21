@@ -1,0 +1,162 @@
+:root {
+  /* color */
+  --color-gray: #a5a5a5;
+  --color-darkgray: #4d4d4d4b;
+  --color-pink-1: rgb(253, 204, 218);
+  --color-pink-2: rgb(255, 176, 176);
+  --color-pink-3: rgb(248, 140, 158);
+  --color-yellow-1: rgb(255, 243, 203);
+  --color-yellow-2: rgb(237, 255, 133);
+  --color-yellow-3: rgb(217, 255, 94);
+  --color-green-1: rgb(221, 255, 208);
+  --color-green-2: rgb(158, 250, 242);
+  --color-green-3: rgb(115, 255, 180);
+  --color-blue-1: rgb(199, 239, 255);
+  --color-blue-2: rgb(163, 218, 255);
+  --color-blue-3: rgb(125, 171, 255);
+  --color-lilac: rgb(236, 228, 241);
+
+  /* size */
+  --input-width: 400px;
+  --input-height: 50px;
+  --font-size: 20px;
+  --margin-size: 5px;
+  --border-radius: 15px;
+
+  /* const */
+  --deg: 45deg;
+  --position-column: 100px;
+}
+
+html {
+  background-color: black;
+  font-family: Consolas, monospace;
+  background-image: url("assets/3_dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  border: solid 1px var(--color-darkgray);
+  text-align: center;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+}
+
+body,
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--margin-size) * 5);
+}
+
+.hidden {
+  display: none;
+}
+
+.user__button {
+  border: none;
+  color: var(--color-gray);
+  background-color: var(--color-darkgray);
+  font-size: calc(var(--font-size) * 0.7);
+  padding: calc(var(--margin-size) * 2);
+  margin: calc(var(--margin-size) * 2);
+}
+
+.small__image {
+  width: 30%;
+  height: 30%;
+}
+
+#login-form {
+  background: linear-gradient(
+    var(--deg),
+    var(--color-yellow-1),
+    var(--color-yellow-2),
+    var(--color-yellow-3)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  position: sticky;
+  top: var(--position-column);
+}
+
+#login-input {
+  width: var(--input-width);
+  height: var(--input-height);
+}
+
+#todo-form {
+  position: sticky;
+  top: calc(var(--position-column) * 2);
+}
+
+#todo-input {
+  width: var(--input-width);
+  height: var(--input-height);
+}
+
+#greeting {
+  font-size: calc(var(--font-size) * 2.5);
+}
+
+#greeting,
+#todo-list {
+  background: linear-gradient(
+    var(--deg),
+    var(--color-green-1),
+    var(--color-green-2),
+    var(--color-green-3)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#del-button {
+  padding: var(--margin-size);
+  margin: var(--margin-size);
+}
+#weather {
+  position: absolute;
+  top: 30px;
+  left: 88%;
+  color: var(--color-gray);
+}
+
+#clock {
+  font-size: calc(var(--font-size) * 5);
+  background: linear-gradient(
+    var(--deg),
+    var(--color-blue-1),
+    var(--color-blue-2),
+    var(--color-blue-3)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#quote {
+  text-align: center;
+  line-height: calc(var(--font-size) * 2);
+}
+
+#quote_text,
+#quote_author {
+  background: linear-gradient(
+    var(--deg),
+    var(--color-blue-1),
+    var(--color-blue-2),
+    var(--color-blue-3)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#quote_author {
+  font-size: calc(var(--font-size) * 0.7);
+}

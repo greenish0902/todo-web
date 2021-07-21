@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- show login form if user is signed out -->
+    <div>
+      <form id="login-form" class="hidden">
+        <input
+          id="login-input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <button class="user__button">Log In</button>
+      </form>
+    </div>
+
+    <!-- show greetings -->
+    <h1 id="greeting"></h1>
+
+    <!-- clock -->
+    <h1 id="clock">00:00:00</h1>
+    <br />
+
+    <!-- todolist -->
+    <div>
+      <form id="todo-form">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Write a To-do and press Enter"
+        />
+        <button class="user__button">Enter</button>
+      </form>
+    </div>
+    <ul id="todo-list"></ul>
+
+    <!-- weather -->
+    <div id="weather">
+      <span></span><br />
+      <span></span>
+    </div>
+
+    <!-- quote -->
+    <h3>
+      <div id="quote">
+        <span id="quote_text"></span><br />
+        <span id="quote_author"></span>
+      </div>
+    </h3>
+
+    <!-- link -->
+    <div>
+      <a href="https://github.com/greenish0902">Welcome to my GITHUB</a>
+    </div>
+    <script src="javascript/app.js" defer></script>
+    <script src="javascript/clock.js" defer></script>
+    <script src="javascript/quotes.js" defer></script>
+    <!-- <script src="javascript/background.js" defer></script> -->
+    <script src="javascript/todo.js" defer></script>
+    <script src="javascript/weather.js" defer></script>
+  </body>
+</html>
